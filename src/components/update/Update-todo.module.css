@@ -1,0 +1,13 @@
+.butonControl {
+  display: flex;
+  justify-content: flex-end; /* <- кнопки справа внутри этого div */
+  gap: 10px; /* расстояние между кнопками */
+}
+
+.inputUpdate {
+  width: 100%;
+}
+
+.buttonUdate {
+  background-color: rgb(92, 154, 94);
+}

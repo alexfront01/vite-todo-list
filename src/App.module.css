@@ -4,3 +4,31 @@
   border: 2px solid #444;
   border-radius: 4px;
 }
+
+.loader {
+  position: fixed; /* фиксируем относительно окна */
+  top: 50%; /* центр по вертикали */
+  left: 50%; /* центр по горизонтали */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* сдвигаем на половину размера, чтобы центр был точным */
+  width: 50px; /* ширина круга */
+  height: 50px; /* высота круга (равна ширине) */
+  border: 5px solid green; /* рамка круга толщина 5 цвет зеленый */
+  border-radius: 50%; /* делаем круг */
+  border-left-color: transparent; /* прореха для видимой анимации Меняет цвет левой стороны рамки на прозрачный. */
+  animation: loader 1s linear infinite;
+  transform: translate(-50%, -50%);
+  transform-origin: center;
+}
+
+/*Определяет анимацию, которая поворачивает элемент от 0° до 360°.*/
+@keyframes loader {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}

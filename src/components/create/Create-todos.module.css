@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
+.inputAddTodo {
+  width: 500px; /* ширина поля ввода */
+  height: 40px; /* высота всего поля вместе с padding */
+  font-size: 16px; /* размер текста внутри */
+  padding: 10px; /* внутренние отступы сверху/снизу и слева/справа */
+  border: none; /* граница */
+  border-radius: 8px; /* скругление углов */
+  background-color: #747474;
+}
+
+.inputAddTodo::placeholder {
+  color: #dcdcdc;
+  opacity: 1; /* важно для Firefox */
+}
+
+.button {
+  width: 200px; /* та же ширина, что у инпута */
+  height: 40px; /* та же высота, что у инпута */
+  font-size: 16px; /* размер текста */
+  padding: 10px; /* внутренние отступы внутри кнопки */
+  border-radius: 8px; /* скругление углов */
+  cursor: pointer; /* меняет курсор при наведении */
+  background-color: #3d3d3d; /* цвет фона */
+  color: white; /* цвет текста */
+  border: none; /* убираем стандартную границу */
+  transition: background 0.3s; /* плавное изменение цвета при hover */
+}
+
+.button:disabled {
+  background-color: #777; /* серый фон */
+  cursor: not-allowed; /* запрещённый курсор */
+  opacity: 0.6; /* немного прозрачная */
+}
